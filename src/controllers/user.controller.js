@@ -77,7 +77,7 @@ const registerUser=asyncHandler(async(req,res)=>{
         fullName:fullName,
         avatar: avatar.url,
         age,
-        role,
+        role:role,
         email, 
         password,
         username,

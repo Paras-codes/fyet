@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Parse application/json
 app.use(bodyParser.json());
 import userRoutes from "./routes/user.routes.js";
-// import subscriptionRoutes from "./routes/subscription.routes.js"
-// app.use("/api/v1/subscription",subscriptionRoutes)
+import videoRoutes from "./routes/video.routes.js"
+app.use("/api/v1/video",videoRoutes)
 app.use("/api/v1/user",userRoutes)
 export{app}
